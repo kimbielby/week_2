@@ -7,7 +7,7 @@ class Task
         @id = @@current_id
         @incomplete = false
         @complete = true
-        @created_at = Time.now 
+        @created_at = Time.now
     end
 
     def complete?
@@ -21,19 +21,9 @@ class Task
     def make_incomplete!
       @incomplete
     end
+
+    def update_content!
+      @content = ""
+
+    end
 end
-
-
-
-
-    #CHECK Vehicles FILE ON HOW TO USE MULTIPLE CLASSES TO HELP ASSIGN FALSE TO COMPLETED
-
-
-
-# Task.new("Feed the cat"); Task.new("Feed the dog");
-
-# task1 = Task.new("Shopping")
-# task1.complete?
-
-
-#p Task.current_id
