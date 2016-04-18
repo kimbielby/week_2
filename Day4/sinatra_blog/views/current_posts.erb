@@ -1,5 +1,7 @@
 <h1>Posts</h1>
 
+<a href="http://localhost:4567/new_post">Create New Post</a>
+
 <% @posts.each_with_index do |posts, index| %>
 <p>
 <a href="http://localhost:4567/post_details/<%= index %>"><%=posts.title%></a>
